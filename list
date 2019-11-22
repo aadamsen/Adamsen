@@ -1,0 +1,14 @@
+import pprint
+pp = pprint.PrettyPrinter(indent=1, width=1, depth=1)
+#tricker for print 1
+tfp1 = "p"
+#tricker for print 2
+tfp2 = "P"
+shopList = [] 
+maxLengthList = 999
+while len(shopList) < maxLengthList:
+    item = input("Enter your Item to the List: ")
+    if item == tfp1 or item == tfp2:
+        pp.pprint(shopList)
+    shopList.append(item)
+        
